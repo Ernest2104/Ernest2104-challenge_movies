@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { fetchMovies } from '../services/movies';
 import Movie from '../components/Movie';
 import { Body, Movies, Search, Menu, Average } from '../styles/styled-components';
+import noMovie from '../images/no_movie.jpg'
 
 const Home = () => {
     const [movies, setMovies] = useState([]);
@@ -26,27 +27,17 @@ const Home = () => {
       } 
       if (document.getElementById('two').checked === true) {
         setFilter(4)
-        // document.getElementById('five').checked = false
       }
       if (document.getElementById('three').checked === true) {
         setFilter(6)
-        // document.getElementById('five').checked = false
       }
       if (document.getElementById('four').checked === true) {
         setFilter(8)
-        // document.getElementById('three').checked = true
       }
       if (document.getElementById('five').checked === true) {
         setFilter(10)
       }
     }
-  
-    // const allUnchecked = () => {
-    //   document.querySelectorAll('input[type=checkbox]').forEach(el => el.checked = false);
-    // }
-    // const allChecked = () => {
-    //   document.querySelectorAll('input[type=checkbox]').forEach(el => el.checked = true);
-    // }
 
     return (
         <Body>
@@ -79,13 +70,14 @@ const Home = () => {
             </Average>
             </Menu>
             {
+              search(movies).length ?
               search(movies).map((movie, i) => {
                 return(
                 <div key={i}>
                   <Movie id={movie.id} poster_path={movie.poster_path} />
                 </div>
                 )
-              })
+              }) : <img src={noMovie} alt='not found'/>
             }
             </Movies>
           </div>

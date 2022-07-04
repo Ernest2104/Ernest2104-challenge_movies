@@ -11,18 +11,14 @@ export const Body = styled.body`
 export const Search = styled.div`
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: inline-block;
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
     background-image: url(${background});
     filter: grayscale(80%);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
     margin-top: 4%;
     border: 1px solid black;
-    height: 20rem;
-    width: 74rem;
+    height: 30%;
+    width: 70%;
     h1{
         margin-top: 5%;
         color: white;
@@ -35,29 +31,26 @@ export const Search = styled.div`
     }
     input[type=search]{
         margin-top: 1.5%;
-        width: 25rem;
-        height: 3rem;
+        margin-bottom: 4%;
+        min-width: 20%;
+        height: 2.5rem;
         color:antiquewhite;
         text-align: left;
         font-size: calc(0.6rem + 0.6vw);
         border-radius: 1rem;
         cursor: pointer;
         padding-left: 2rem;
-        /* background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left; */
         background: url(${magnifying_glass}) no-repeat left;
         background-size: 1.4rem;
     }
 `
 export const Movies = styled.div`
-    border: 1px solid black;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
-    margin: 0 6rem 2rem 6rem;
-    padding: 1rem 2rem;
+    padding-top: 1rem;
     background-color: white;
-    width: 70rem;
+    width: 70%;
 `
 export const Card = styled.div`
     margin: 0.5rem;
@@ -74,11 +67,11 @@ export const Detail = styled.div`
     display: flex;
     flex-direction: column;
     
-    width: 70rem;
+    width: 65%;
     align-items: stretch;
     margin: 2% auto;
     img{
-        width: calc(25rem + 25vw);
+        width: 70%;
         border-radius: 0.5rem;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
@@ -141,7 +134,7 @@ export const Average = styled.p`
     }
 `
 export const Menu = styled.div`
-    display: flex;
-    width: 60rem;
+    display: inline-flex;
+    width: 90%;
     justify-content: space-between;
 `
