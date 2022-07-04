@@ -47,7 +47,7 @@ const Home = () => {
             <input 
               type='search' 
               placeholder='Search for a Movie...'
-              onChange={e => setQuery(e.target.value)}
+              onChange={e => setQuery(e.target.value.toLowerCase())}
             />
           </Search>
                     

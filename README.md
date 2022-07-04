@@ -35,4 +35,4 @@ Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación en t
 
 ## **Probar la aplicación en producción**
 
-Abre [http://localhost:3000](http://localhost:3000) para ver la aplicación en tu navegador.
+Abre https://sage-madeleine-c01f05.netlify.app/ para ver la aplicación deployada en tu navegador.
